@@ -1,0 +1,36 @@
+table {
+  width: 300px;
+  height: 400px;
+
+  text-align: center;
+  padding: 8px;
+  margin: 20px;
+}
+
+.display {
+  background-color: black;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  font-size: x-large;
+}
+
+.btn {
+  width: 60px;
+  height: 40px;
+
+  font-size: x-large;
+}
+.btn_under {
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+}
+
+td {
+  padding: 0;
+}
+
+#debug {
+  display: none;
+}

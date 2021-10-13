@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+
+  <body>
+    <h3>電卓</h3>
+
+    <!-- ここに記述していきましょう！ -->
+
+<form name="dentaku">
+  <table>
+    <td colspan="4">
+      <input type="text" class="display" id="display" name="display" value="0" disabled>
+    </td>
+    <tr>
+
+<!-- 一段目 -->
+<tr>
+  <td><input class="btn js-number" type="button" value="7"></td>
+  <td><input class="btn js-number" type="button" value="8"></td>
+  <td><input class="btn js-number" type="button" value="9"></td>
+  <td><input class="btn js-operator is-add" type="button" value="+"></td>
+</tr>
+
+<!-- 二段目 -->
+<tr>
+  <td><input class="btn js-number" type="button" value="4"></td>
+  <td><input class="btn js-number" type="button" value="5"></td>
+  <td><input class="btn js-number" type="button" value="6"></td>
+  <td><input class="btn js-operator is-sub" type="button" value="-"></td>
+</tr>
+
+<tr>
+  <td><input class="btn js-number" type="button" value="1"></td>
+  <td><input class="btn js-number" type="button" value="2"></td>
+  <td><input class="btn js-number" type="button" value="3"></td>
+  <td><input class="btn js-operator is-multi" type="button" value="×"></td>
+</tr>
+
+<tr>
+  <td><input class="btn js-number" type="button" value="0"></td>
+  <td><input class="btn js-number" type="button" value="00"></td>
+  <td><input class="btn js-number" type="button" value="."></td>
+  <td><input class="btn js-operator is-division" type="button" value="÷"></td>
+</tr>
+
+<tr>
+  <td colspan="2"><input class="btn_under is-ac" id="clear" type="button" value="AC" onclick="clearScreen()"></td>
+  <td colspan="2"><input class="btn_under is-equal" id="result" type="button" value="="></td>
+</tr>
+    </tr>
+  </table>
+  <div id="debug">
+    <span id="leftNumber"></span>
+    <span id="inputOperator"></span>
+    <span id="rightNumber"></span>
+    =
+    <span id="resultNumber"></span>
+  </div>
+</form>
+<script src="main.js"></script>
+    </body>
+</html>
